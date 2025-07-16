@@ -67,7 +67,7 @@ const store = createStore(
  * in App component below
  */
 
-export default function AppRoutingLoaderContainer() {
+export function PassEditorApp() {
 	const [isLoading, setLoading] = React.useState(true);
 
 	return (

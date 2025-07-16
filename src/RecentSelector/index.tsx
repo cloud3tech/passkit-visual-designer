@@ -366,18 +366,6 @@ export default class RecentSelector extends React.Component<Props, State> {
 
 		return (
 			<div id="recent-selector">
-				<header>
-					<div>
-						<h4>
-							Passkit Visual Designer <span id="version">v{version}</span>
-						</h4>
-					</div>
-					<div>
-						<a href="https://git.io/JLNCQ" target="_blank" rel="noopener">
-							<GithubLogoDarkMode width="25px" height="25px" />
-						</a>
-					</div>
-				</header>
 				<main>
 					<CSSTransition in={this.state.showError} timeout={1000} unmountOnExit mountOnEnter>
 						<div className="error-area" onClick={() => this.toggleErrorOverlay()}>

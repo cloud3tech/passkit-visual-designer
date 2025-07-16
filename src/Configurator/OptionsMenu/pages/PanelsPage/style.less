@@ -4,27 +4,13 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
-	border-bottom: 1px solid #333;
 	overflow: hidden;
 	flex-grow: 1;
 
 	& > .panels-list {
 		padding-top: 10px;
-		background-color: #282828;
+		background-color: #002e38;
 		.scrollableWithoutScrollbars(y);
-	}
-
-	&::after {
-		height: 60px;
-		bottom: 56px;
-		content: "";
-		position: absolute;
-		right: 0;
-		left: 0;
-		opacity: 0;
-		background: linear-gradient(to top, rgb(28 28 28) 0%, transparent 40%);
-		transition: opacity 0.5s ease-in-out;
-		pointer-events: none;
 	}
 
 	&.not-enough::after {
